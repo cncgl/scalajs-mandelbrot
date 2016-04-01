@@ -1,0 +1,29 @@
+language: scala
+scala:
+- 2.11.8
+sudo: false
+jdk:
+- oraclejdk8
+env:
+  global:
+    - GIT_COMMITTER_NAME=cncgl
+    - GIT_COMMITTER_EMAIL=concigel@gmail.com
+    - GIT_AUTHOR_NAME=cncgl
+    - GIT_AUTHOR_EMAIL=concigel@gmail.com
+    - secure: V0LKeFVna7GYSV5yqSfTSodrOz5X+bBJ/qv6wCcIbgQ2ZRrCK0W6uvPSXvPS7/gOwwlWDXCDtfyAYBEnsTnQND5SyCR2VEYDzMwx+sYBhzzAUSuSWPfDylymmqJqvJ7V8mftWynQI22RrioDWpiOfo56VBR89WNX6G8n/UPiSEyuLvVWoWcJAK2pg7kD4xrX7xubZB6fW6BxfVwnx7UBlF8ykmHw9qsxyF780n1T8v6LhkLMqTD40KpeKMBMmhfBuXSlV2OnEmEwucNpLeuipriddIwHCHfqHltOoAx+ym5ORUAAeS1gM0W54cnuQKGRlaWwLMyL6xExm66Yy5RtwJVyQzUHkJDFSa61rbAm6ZjQ00qmmQ6Dlv3uALOMOfMgEAG5RKpM1Mef7Kqy23HrhcvlJW5hrW4K4RWfooIKKEbbu3ry6J5YKMXXrAIM9dXYsAhmU1YvEqFIq6Rmxk5kdDemFZzyOSYArimDQO5JpIbx4/BgA0xoh44aQo5alWNslKOzySiiysSgQsoCVcjm8Zmoads70f9mw7DpiuivhL+cybEt0hC4lHX4FZCPQr7yhB9W0bK/kQEJGPUmRqBeHaZlwJAfBB2NBxUlpnIRbie923zD+Kk9P2M2wCQPypmKBOaeWRYctWOE70JmVtpbykyTdZjhtlKA8ONX52JWl84=
+script:
+- sbt ++$TRAVIS_SCALA_VERSION fullOptJS
+# Tricks to avoid unnecessary cache updates, from
+# http://www.scala-sbt.org/0.13/docs/Travis-CI-with-sbt.html
+- find $HOME/.sbt -name "*.lock" | xargs rm
+- find $HOME/.ivy2 -name "ivydata-*.properties" | xargs rm
+after_success:
+- cd target
+- git init
+- git add -A
+- git commit -m 'Deploy to GitHub Pages'
+- '[ $GH_TOKEN ] && git push --force --quiet https://$GH_TOKEN@github.com/cncgl/scalajs-mandelbrot.git master:gh-pages 2> /dev/null'
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt/boot/

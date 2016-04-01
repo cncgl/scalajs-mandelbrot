@@ -11,10 +11,9 @@ version := "0.1.0"
 scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
-//  "org.scala-js" %%% "scalajs-dom" % "0.8.2",
-  "be.doeraene" %%% "scalajs-jquery" % "0.9.0",
-  "com.lihaoyi" %%% "scalatags" % "0.5.4",
-  "com.lihaoyi" %%% "utest" % "0.4.3"
+  "be.doeraene"    %%% "scalajs-jquery" % "0.9.0",
+  "com.lihaoyi"    %%% "scalatags"      % "0.5.4",
+  "com.lihaoyi"    %%% "utest"          % "0.4.3"
 )
 
 // bootSnippet := "example.ScalaJSMandelbrot().main(document.getElementById('canvas'));"
