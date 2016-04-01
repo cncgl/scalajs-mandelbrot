@@ -1,21 +1,25 @@
-import com.lihaoyi.workbench.Plugin._
+// import com.lihaoyi.workbench.Plugin._
 
 enablePlugins(ScalaJSPlugin)
 
-workbenchSettings
+// workbenchSettings
 
-name := "Example"
+name := "Scala-Mandelbrot"
 
-version := "0.1-SNAPSHOT"
+version := "0.1.0"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.8.2",
-  "com.lihaoyi" %%% "scalatags" % "0.5.4"
+//  "org.scala-js" %%% "scalajs-dom" % "0.8.2",
+  "be.doeraene" %%% "scalajs-jquery" % "0.9.0",
+  "com.lihaoyi" %%% "scalatags" % "0.5.4",
+  "com.lihaoyi" %%% "utest" % "0.4.3"
 )
 
-bootSnippet := "example.ScalaJSExample().main(document.getElementById('canvas'));"
+// bootSnippet := "example.ScalaJSMandelbrot().main(document.getElementById('canvas'));"
 
-updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
+testFrameworks += new TestFramework("utest.runner.Framework")
+
+// updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
 
