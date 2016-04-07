@@ -4,9 +4,10 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width" />
   <title>Mandelbrot Set</title>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
   <style>
     html, body, canvas { width: 800px; height: 800px; margin: auto; overflow: hidden; }
-    .social-area { width: 100%; min-height: 20px; padding: 0 0; }
+    .social-area { width: 100%; min-height: 20px; padding: 0 0; margin-bottom: 40px; }
     @media screen and ( min-width:480px ) { .social-area { min-height: 20px; } }
     ul.social-button { width: 238px; margin: 0 auto; padding: 0; border: none; list-style-type: none; }
     @media screen and ( min-width:480px ) { ul.social-button { width: 700px; margin: 0; } }
@@ -21,6 +22,7 @@
     .sc-li { width: 50px; }
     .sc-li-img { border: none; margin: 0 auto; padding: 0; width: 36px; height: 60px; }
     @media screen and ( min-width:480px ) { .sc-li { display: none; } }
+    .clear { clear: both; }
   </style>
 </head>
 <body>
@@ -55,10 +57,21 @@
       <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
     </span>
   </div>
+  <div class="clear"></div>
   <div>
+    <div class="dropup">
+      <label for="limit">繰り返し上限</label>
+      <select id="limit" name="limit">
+        <option value="64">64</option>
+        <option value="128">128</option>
+        <option value="256">256</option>
+      </select>
+    </div>
     <canvas style="display: block; margin: 0 auto" id="canvas" width="400" height="400"/>
   </div>
   <a href="https://github.com/cncgl/scalajs-mandelbrot"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+  <!--script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script-->
   <script type="text/javascript" src="../scala-mandelbrot-fastopt.js"></script>
   <!--script type="text/javascript" src="/workbench.js"></script-->
   <script>
