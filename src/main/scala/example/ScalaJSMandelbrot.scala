@@ -22,7 +22,7 @@ object ScalaJSMandelbrot {
     val ratio = zoom.value.toInt
     val repeat = limit.value.toInt  // 収束発散判定回数
 
-    println(cols, ' ' + ratio + ' ' + repeat)
+    // println(cols, ' ' + ratio + ' ' + repeat)
 
     run()
 
@@ -41,25 +41,41 @@ object ScalaJSMandelbrot {
         x = x1
         y = y1
       }
-      0
+      -1
+    }
+
+    def countToColor(count: Int, base: Int): String = {
+      if(count<0) return "black"
+
+      var d: Int = count % base
+      d *= 256/base
+
+      val m: Int = (d/42.667).toInt
+      var r = 0
+      var g = 0
+      var b = 0
+      m match {
+        case 0 => r = 0; g = 6*d; b = 255
+        case 1 => r = 0; g = 255; b = 255-6*(d-43)
+        case 2 => r = 6*(d-86); g = 255; b = 0
+        case 3 => r = 255; g = 255 - 6*(d-129); b = 0
+        case 4 => r = 255; g = 0; b = 6 * (d-171)
+        case 5 => r = 255 - 6*(d-214); g = 0; b = 255
+        case _ => r = 0; g = 0; b = 0
+      }
+      s"rgb($r, $g, $b)"
     }
 
     def run(): Unit = {
       clear()
-
       val step: Double = vs/SIZE
       for (x <- -SIZE/2 to SIZE/2) {
         val a = creal + step * x
         for (y <- -SIZE/2 to SIZE/2) {
           val b = cimag + step * y
           val n = mandelbrot(a, b)
-          if (n > 0) {
-            val r = n * 10
-            val g = n * 10
-            val b = n * 10
-            ctx.fillStyle = s"rgb($r, $g, $b)"
-            ctx.fillRect(SIZE/2 + x, SIZE/2 - y, 1, 1)
-          }
+          ctx.fillStyle = countToColor(n, cols)
+          ctx.fillRect(SIZE/2 + x, SIZE/2 - y, 1, 1)
         }
       }
     }
