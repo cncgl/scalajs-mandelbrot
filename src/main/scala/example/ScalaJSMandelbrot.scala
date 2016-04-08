@@ -6,25 +6,29 @@ import org.scalajs.dom.html
 @JSExport
 object ScalaJSMandelbrot {
   @JSExport
-  def main(canvas: html.Canvas): Unit = {
+  def main( limit: html.Select,
+            colors: html.Select,
+            zoom: html.Select,
+            canvas: html.Canvas): Unit = {
     val ctx = canvas.getContext("2d")
                     .asInstanceOf[dom.CanvasRenderingContext2D]
 
-    val xmax = 400              // キャンバス Xmax
-    val ymax = 400              // キャンバス Ymax
-    val xcenter: Double = -0.75 // 中心座標 X
-    val ycenter: Double = 0.0   // 中心座標 Y
+    val SIZE = 400              // キャンバス サイズ
+    val creal: Double = -0.75 // 中心座標 X
+    val cimag: Double = 0.0   // 中心座標 Y
     val vs: Double = 4.0        // 区画幅（直径）
-    val repeat = 40             // 収束発散判定回数
 
-    val xstart = xcenter - vs/2.0
-    val ystart = ycenter - vs/2.0
+    val cols = colors.value.toInt
+    val ratio = zoom.value.toInt
+    val repeat = limit.value.toInt  // 収束発散判定回数
+
+    println(cols, ' ' + ratio + ' ' + repeat)
 
     run()
 
     def clear(): Unit = {
       ctx.fillStyle = "black"
-      ctx.fillRect(0, 0, xmax, ymax)
+      ctx.fillRect(0, 0, SIZE, SIZE)
     }
 
     def mandelbrot(a: Double, b: Double): Int = {
@@ -42,17 +46,19 @@ object ScalaJSMandelbrot {
 
     def run(): Unit = {
       clear()
-      for (w <- 0 until xmax) {
-        val a = xstart + vs / xmax * w
-        for (h <- 0 until ymax) {
-          val b = ystart + vs / ymax * h
+
+      val step: Double = vs/SIZE
+      for (x <- -SIZE/2 to SIZE/2) {
+        val a = creal + step * x
+        for (y <- -SIZE/2 to SIZE/2) {
+          val b = cimag + step * y
           val n = mandelbrot(a, b)
           if (n > 0) {
             val r = n * 10
             val g = n * 10
             val b = n * 10
             ctx.fillStyle = s"rgb($r, $g, $b)"
-            ctx.fillRect(w, h, 1, 1)
+            ctx.fillRect(SIZE/2 + x, SIZE/2 - y, 1, 1)
           }
         }
       }
