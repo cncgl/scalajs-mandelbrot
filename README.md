@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/cncgl/scalajs-mandelbrot.svg?branch=master)](https://travis-ci.org/cncgl/scalajs-mandelbrot)
 [![Scala.js](https://www.scala-js.org/assets/badges/scalajs-0.6.8.svg)](https://www.scala-js.org)
+[![Stories in Ready](https://badge.waffle.io/cncgl/scalajs-mandelbrot.svg?label=ready&title=Ready)](http://waffle.io/cncgl/scalajs-mandelbrot)
 
 Mandelbrot set rendering program for scala.js
 
