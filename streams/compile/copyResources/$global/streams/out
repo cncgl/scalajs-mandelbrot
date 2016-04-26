@@ -1,0 +1,3 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/travis/build/cncgl/scalajs-mandelbrot/src/main/resources/index-dev.html,/home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/index-dev.html)[0m
+[0m[[0mdebug[0m] [0m	(/home/travis/build/cncgl/scalajs-mandelbrot/src/main/resources/index-opt.html,/home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/index-opt.html)[0m

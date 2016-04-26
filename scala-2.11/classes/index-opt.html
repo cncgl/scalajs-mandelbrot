@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width" />
+  <title>Mandelbrot Set</title>
+  <style>
+    html, body { width: 800px; height: 800px; margin: auto; overflow: hidden; }
+    canvas { width: 400px; height: 400px; overflow: hidden; }
+    .social-area { width: 100%; min-height: 20px; padding: 0 0; }
+    @media screen and ( min-width:480px ) { .social-area { min-height: 20px; } }
+    ul.social-button { width: 238px; margin: 0 auto; padding: 0; border: none; list-style-type: none; }
+    @media screen and ( min-width:480px ) { ul.social-button { width: 700px; margin: 0; } }
+    ul.social-button li { float: left; text-align: center; height: 31px; margin: 0 8px; padding: 0; }
+    .google-social { height: 20px; width: 70px; margin: 0 8px; padding: 0; display: inline-block; }
+    .sc-tw { width: 71px; }
+    .sc-tw svg { width: 30px; height: 30px; }
+    .sc-tw a { height: 56px; margin: 0 auto; padding-top: 6px; display: block; background: #1B95E0; font-size: 12px; color: #fff; font-weight: 700; text-decoration: none; letter-spacing: .5px; border-radius: 2px; }
+    .sc-tw a:hover { color: #fff; background: #0c7abf; }
+    .sc-tw span:before { white-space: pre; content: '\A'; }
+    .sc-fb { z-index: 99; width: 69px; }
+    .sc-li { width: 50px; }
+    .sc-li-img { border: none; margin: 0 auto; padding: 0; width: 36px; height: 60px; }
+    @media screen and ( min-width:480px ) { .sc-li { display: none; } }
+    .clear { clear: both; }
+  </style>
+</head>
+<body>
+<h2>Mandelbrot Set</h2>
+  <div class="social-area">
+    <ul class="social-button">
+      <li><a href="https://twitter.com/share" class="twitter-share-button"
+             data-url="http://cncgl.github.io/scalajs-mandelbrot/" data-hashtags="Mandelbrot"
+             data-via="subcigel" data-lang="ja">ツイート</a></li>
+      <li><div class="fb-share-button" data-href="http://cncgl.github.io/scalajs-mandelbrot/"
+               data-layout="button_count"></div></li>
+      <li><div class="google-social"><div class="g-plusone" data-size="medium"></div></div></li>
+      <li><a href="http://b.hatena.ne.jp/entry/http://cncgl.github.io/scalajs-mandelbrot/"
+             class="hatena-bookmark-button" data-hatena-bookmark-title="Mandelbrot"
+             data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加">
+        <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+             alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+      <li><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="ja"></a></li>
+    </ul>
+    <span>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.5&appId=1085603208158222";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'ja'}</script>
+      <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+    </span>
+  </div>
+  <div class="clear"></div>
+  <div>
+    <div class="dropup">
+      <label for="limit">繰り返し上限</label>
+      <select id="limit" name="limit">
+        <option value="64">64</option>
+        <option value="128">128</option>
+        <option value="256">256</option>
+        <option value="1024">1024</option>
+      </select>
+      <label for="colors">カラー階調数</label>
+      <select id="colors" name="colors">
+        <option value="16">16</option>
+        <option value="32">32</option>
+        <option value="64">64</option>
+        <option value="128">128</option>
+        <option value="256">256</option>
+      </select>
+      <label for="zoom">クリック倍率</label>
+      <select id="zoom" name="zoom">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="5">5</option>
+      </select>
+      <input type="button" value="実行" onclick="example.ScalaJSMandelbrot().main(
+        document.getElementById('limit'),
+        document.getElementById('colors'),
+        document.getElementById('zoom'),
+        document.getElementById('canvas'));"/>
+    </div>
+    <canvas id="canvas" width="400" height="400"/>
+  </div>
+  <a href="https://github.com/cncgl/scalajs-mandelbrot"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+  <script type="text/javascript" src="../scala-mandelbrot-opt.js"></script>
+</body>
+</html>

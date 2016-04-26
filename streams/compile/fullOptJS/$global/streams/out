@@ -1,0 +1,19 @@
+[0m[[0minfo[0m] [0mFull optimizing /home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/scala-mandelbrot-opt.js[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 349644 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 599096 us[0m
+[0m[[0mdebug[0m] [0mBasic Linking: 957009 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: true[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 791583 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 4987 methods.[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 2350688 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 3224745 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 546953 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 80105 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 629168 us[0m
+[0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 532[0m
+[0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 0 -- invalidated: 2865[0m
+[0m[[0mdebug[0m] [0mEmitter (create Closure trees): 4302791 us[0m
+[0m[[0minfo[0m] [0mClosure: 0 error(s), 0 warning(s)[0m
+[0m[[0mdebug[0m] [0mClosure: Compiler pass: 21278114 us[0m
+[0m[[0mdebug[0m] [0mClosure: Write result: 1490658 us[0m
+[0m[[0mdebug[0m] [0mGlobal IR cache stats: reused: 0 -- invalidated: 10 -- trees read: 669[0m

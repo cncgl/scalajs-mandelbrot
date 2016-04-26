@@ -1,0 +1,169 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes
+compile options:
+1 items
+0 -> -Xplugin:/home/travis/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.8/jars/scalajs-compiler_2.11.8-0.6.8.jar
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.8
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+5 items
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot$$anonfun$example$ScalaJSMandelbrot$$mandelbrot$1$1.class
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot$$anonfun$run$1$1$$anonfun$apply$mcVI$sp$1.class
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot$$anonfun$run$1$1.class
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot$.class
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot.class
+binary dependencies:
+4 items
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /home/travis/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.9.0.jar
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /home/travis/.ivy2/cache/org.scala-js/scalajs-library_2.11/jars/scalajs-library_2.11-0.6.8.jar
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /home/travis/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+5 items
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> example.ScalaJSMandelbrot
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> example.ScalaJSMandelbrot$
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> example.ScalaJSMandelbrot$$anonfun$example$ScalaJSMandelbrot$$mandelbrot$1$1
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> example.ScalaJSMandelbrot$$anonfun$run$1$1
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> example.ScalaJSMandelbrot$$anonfun$run$1$1$$anonfun$apply$mcVI$sp$1
+used names:
+75 items
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> %
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> *
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> +
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> -
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> /
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> <
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> <init>
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> >
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> Any
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> AnyRef
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> Canvas
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> CanvasRenderingContext2D
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> Double
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> Int
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> JSExport
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> Predef
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> SIZE
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> ScalaJSMandelbrot
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> Select
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> String
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> StringContext
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> Unit
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> a
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> annotation
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> asInstanceOf
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> augmentString
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> b
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> base
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> canvas
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> cimag
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> clear
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> colors
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> cols
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> count
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> countToColor
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> creal
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> ctx
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> d
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> dom
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> example
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> fillRect
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> fillStyle_=
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> foreach
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> fromString
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> g
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> getContext
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> html
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> intWrapper
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> js
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> limit
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> m
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> main
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> mandelbrot
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> n
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> org
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> package
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> r
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> repeat
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> run
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> s
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> scala
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> scalajs
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> step
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> to
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> toDouble
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> toInt
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> unary_-
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> until
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> value
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> vs
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> x
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> x1
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> y
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> y1
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> zoom
+product stamps:
+5 items
+/home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot$$anonfun$example$ScalaJSMandelbrot$$mandelbrot$1$1.class -> lastModified(1461657130000)
+/home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot$$anonfun$run$1$1$$anonfun$apply$mcVI$sp$1.class -> lastModified(1461657130000)
+/home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot$$anonfun$run$1$1.class -> lastModified(1461657130000)
+/home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot$.class -> lastModified(1461657130000)
+/home/travis/build/cncgl/scalajs-mandelbrot/target/scala-2.11/classes/example/ScalaJSMandelbrot.class -> lastModified(1461657129000)
+source stamps:
+1 items
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> hash(debeb09b750bb6611006acb40202bddeef232a6c)
+binary stamps:
+4 items
+/home/travis/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.9.0.jar -> lastModified(1455392627000)
+/home/travis/.ivy2/cache/org.scala-js/scalajs-library_2.11/jars/scalajs-library_2.11-0.6.8.jar -> lastModified(1458292211000)
+/home/travis/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar -> lastModified(1457496963000)
+/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> lastModified(1423149899000)
+class names:
+4 items
+/home/travis/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.9.0.jar -> org.scalajs.dom.raw.HTMLCanvasElement
+/home/travis/.ivy2/cache/org.scala-js/scalajs-library_2.11/jars/scalajs-library_2.11-0.6.8.jar -> scala.scalajs.js.annotation.JSExport
+/home/travis/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar -> scala.Double
+/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> java.lang.Object
+internal apis:
+1 items
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAjBuXLAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAFnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cIcvEZJ0AAZub3RpZnlzcQB+AAwmKmGqdAAEd2FpdHNxAH4ADNBaJE50AA0kYXNJbnN0YW5jZU9mc3EAfgAMxcQEbnQABmVxdWFsc3NxAH4ADNRmc1R0AAxhc0luc3RhbmNlT2ZzcQB+AAybGgvcdAAMc3luY2hyb25pemVkc3EAfgAMTOB+eHQADSRpc0luc3RhbmNlT2ZzcQB+AAyWyuGOdAAEbWFpbnNxAH4ADEHnEVJ0AAlub3RpZnlBbGxzcQB+AAyi9babdAAMaXNJbnN0YW5jZU9mc3EAfgAMm1SgA3QAAj09c3EAfgAMSC913XQABWNsb25lc3EAfgAM8c6CG3QACHRvU3RyaW5nc3EAfgAMCV5rwXQAEVNjYWxhSlNNYW5kZWxicm90c3EAfgAMcbH0H3QAAiE9c3EAfgAMVXqtunQACGdldENsYXNzc3EAfgAMt2uAS3QAAm5lc3EAfgAM5zX9FXQAAmVxc3EAfgAMPRBOm3QAFiRqcyRleHBvcnRlZCRtZXRoJG1haW5zcQB+AAyyUkY6dAACIyNzcQB+AAzq7lR1dAAIZmluYWxpemVzcQB+AAwvpUM4dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBDeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAABc3IAFHhzYnRpLmFwaS5Bbm5vdGF0aW9u3g6BovZcCrICAAJbAAlhcmd1bWVudHN0AB9bTHhzYnRpL2FwaS9Bbm5vdGF0aW9uQXJndW1lbnQ7TAAEYmFzZXQAEEx4c2J0aS9hcGkvVHlwZTt4cHVyAB9bTHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnQ7UZ2mjzglD3gCAAB4cAAAAAFzcgAceHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudNZFsdgDGxd8AgACTAAEbmFtZXEAfgANTAAFdmFsdWVxAH4ADXhwdAAAdAACKClzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwdAAISlNFeHBvcnRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AFxzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAVzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3EAfgBodAAHc2NhbGFqc3NxAH4AaHQAAmpzc3EAfgBodAAKYW5ub3RhdGlvbnNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBpc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAZZXhhbXBsZS5TY2FsYUpTTWFuZGVsYnJvdHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAF0ACRzY2FsYS5zY2FsYWpzLmpzLmFubm90YXRpb24uSlNFeHBvcnRzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AIF4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cQB+AFxzcQB+AIAAcHNxAH4AhXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBDTAAJaW5oZXJpdGVkcQB+AENMAAdwYXJlbnRzcQB+AEN4cQB+AF1zcQB+AIAAcHNxAH4AhXVxAH4APgAAAABzcQB+AIAAcHNxAH4AhXVxAH4APgAAAABzcQB+AIAAcHNxAH4AhXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3EAfgBadAAGT2JqZWN0c3EAfgBgc3EAfgBjdXEAfgBmAAAAA3NxAH4AaHQABGphdmFzcQB+AGh0AARsYW5ncQB+AHNzcQB+AFp0AANBbnlzcQB+AGBzcQB+AGN1cQB+AGYAAAACc3EAfgBocQB+AGtxAH4Ac3VyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAB2V4YW1wbGVzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVRRjaUudXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQARS9ob21lL3RyYXZpcy9idWlsZC9jbmNnbC9zY2FsYWpzLW1hbmRlbGJyb3QvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFN6+sJt1C7ZhEAastAICvd7vIyps
+external apis:
+0 items
+source infos:
+1 items
+/home/travis/build/cncgl/scalajs-mandelbrot/src/main/scala/example/ScalaJSMandelbrot.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVFGNpS51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQARS9ob21lL3RyYXZpcy9idWlsZC9jbmNnbC9zY2FsYWpzLW1hbmRlbGJyb3QvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
